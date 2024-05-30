@@ -51,8 +51,10 @@ Rows are key-value pair objects, mapping column names as keys with their values.
 <DataGrid getRowHeight={() => "auto"} /> // Dynamic row height
 ```
 
+- autoHeight: [Layout](https://mui.com/x/react-data-grid/layout/)
 - slots: [Quick filter](https://mui.com/x/react-data-grid/filtering/quick-filter/), [Export](https://mui.com/x/react-data-grid/export/)
 - pageSizeOptions: [Pagination](https://mui.com/x/react-data-grid/pagination/)
+- checkboxSelection: [Row Selection](https://mui.com/x/react-data-grid/row-selection/)
 
 ## Charts
 
