@@ -16,13 +16,11 @@ import { renderProgress } from "./ProgressBar";
 const columns: GridColDef[] = [
   {
     field: "id",
-    headerClassName: "super-app-theme--header",
     headerName: "ID",
     width: 70,
   },
   {
     field: "img",
-    headerClassName: "super-app-theme--header",
     headerName: "Image",
     sortable: false,
     width: 70,
@@ -100,7 +98,6 @@ export default function Table() {
         autoHeight={true}
         rows={rows}
         columns={columns}
-        disableColumnFilter
         disableColumnSelector
         disableDensitySelector
         initialState={{
