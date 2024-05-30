@@ -31,9 +31,9 @@ yarn add @mui/x-charts
 
 Columns are objects defined with a set of attributes of the GridColDef interface. They are mapped to the rows through their field property.
 
-- type: Boolean type is rendered in √ | × format. Action type allows you to insert any icons (e.g. Edit button).
 - field: Are mapped to key of the row object.
 - headerName: Column title.
+- type: Boolean type is rendered in √ | × format. Action type allows you to insert any icons (e.g. Edit button).
 - sortable(true | false): Use sortable attribute to define whether data field is sortable on click.
 - editable(true | false): Use editable attribute to define whether data field is editable on click. [Editing](https://mui.com/x/react-data-grid/editing/)
 - renderCell: User renderCell attribute for rendering React component within cells. Same as Ant Design render attribute. If the React component consists of multiply lines, please do create a seperate function. Example: renderProgress.
