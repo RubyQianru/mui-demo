@@ -33,6 +33,7 @@ Columns are objects defined with a set of attributes of the GridColDef interface
 
 - type: Boolean type is rendered in √ | × format. Action type allows you to insert any icons (e.g. Edit button).
 - field: Are mapped to key of the row object.
+- headerName: Column title.
 - sortable(true | false): Use sortable attribute to define whether data field is sortable on click.
 - editable(true | false): Use editable attribute to define whether data field is editable on click. [Editing](https://mui.com/x/react-data-grid/editing/)
 - renderCell: User renderCell attribute for rendering React component within cells. Same as Ant Design render attribute. If the React component consists of multiply lines, please do create a seperate function. Example: renderProgress.
@@ -51,7 +52,7 @@ Rows are key-value pair objects, mapping column names as keys with their values.
 <DataGrid getRowHeight={() => "auto"} /> // Dynamic row height
 ```
 
-- autoHeight: [Layout](https://mui.com/x/react-data-grid/layout/)
+- autoHeight: The autoHeight prop enables the Data Grid to adjust its size based on its content. This means that the Data Grid's height will be determined by the number of rows, ensuring that all rows will be visible to the user simultaneously. [Layout](https://mui.com/x/react-data-grid/layout/)
 - slots: [Quick filter](https://mui.com/x/react-data-grid/filtering/quick-filter/), [Export](https://mui.com/x/react-data-grid/export/)
 - pageSizeOptions: [Pagination](https://mui.com/x/react-data-grid/pagination/)
 - checkboxSelection: [Row Selection](https://mui.com/x/react-data-grid/row-selection/)
