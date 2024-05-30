@@ -31,7 +31,7 @@ const useStyles = makeStyles(
           backgroundColor: "#efbb5aa3",
         },
         "&.high": {
-          backgroundColor: "#088208a3",
+          backgroundColor: "	#76B900",
         },
       },
     }),

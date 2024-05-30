@@ -1,4 +1,5 @@
 import Table from "@/components/Table";
+import NavBar from "@/components/NavBar";
 
 export default function HomePage() {
   return (
@@ -6,12 +7,24 @@ export default function HomePage() {
       <section
         style={{
           width: "100%",
-          height: "80%",
+          height: "100%",
           display: "flex",
           justifyContent: "center",
+          flexDirection: "column",
+          gap: 20,
         }}
       >
-        <Table />
+        <NavBar />
+        <main
+          style={{
+            width: "100%",
+            height: "80%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Table />
+        </main>
       </section>
     </main>
   );
