@@ -2,6 +2,8 @@
 
 [Main Documentation](https://mui.com/material-ui/getting-started/)
 
+Material UI is an open-source React component library that implements Google's Material Design. It's comprehensive and can be used in production out of the box.
+
 [MUI X - Overview](https://mui.com/x/introduction/)
 
 MUI X is a collection of advanced React UI components for complex use cases. Use the native integration with Material UI or extend your design system.
@@ -14,6 +16,7 @@ This demo will be covering basics of MUI and what features of MUI we might consi
 yarn add @mui/material @emotion/react @emotion/styled
 yarn add @mui/material-core
 yarn add @mui/x-data-grid
+yarn add @mui/x-charts
 ```
 
 ## DataGrid (Table)
