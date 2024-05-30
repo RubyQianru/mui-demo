@@ -1,7 +1,14 @@
 // Latest document:
 // https://mui.com/x/react-data-grid/
 import serverGetPokemons from "@/utils/serverGetPokemons";
-import { DataGrid, GridColDef, GridToolbar } from "@mui/x-data-grid";
+import {
+  DataGrid,
+  GridColDef,
+  GridToolbar,
+  GridActionsCellItem,
+} from "@mui/x-data-grid";
+import DeleteIcon from "@mui/icons-material/Delete";
+
 import { renderProgress } from "./ProgressBar";
 
 // Columns are objects defined with a set of attributes of the GridColDef interface.
@@ -32,7 +39,6 @@ const columns: GridColDef[] = [
   },
   {
     field: "height",
-
     headerName: "Height",
     width: 130,
   },
@@ -65,6 +71,14 @@ const columns: GridColDef[] = [
     headerName: "Average Spawns",
     width: 130,
   },
+  {
+    field: "actions",
+    type: "actions",
+    width: 80,
+    getActions: () => [
+      <GridActionsCellItem icon={<DeleteIcon />} label="Delete" />,
+    ],
+  },
 ];
 
 // Rows are key-value pair objects, mapping column names as keys with their values.
@@ -86,6 +100,9 @@ export default function Table() {
         autoHeight={true}
         rows={rows}
         columns={columns}
+        disableColumnFilter
+        disableColumnSelector
+        disableDensitySelector
         initialState={{
           pagination: {
             paginationModel: { page: 0, pageSize: 10 },
@@ -97,7 +114,7 @@ export default function Table() {
             },
           },
         }}
-        pageSizeOptions={[10]}
+        pageSizeOptions={[10, 25]}
         checkboxSelection
         // Use slots attribute for the top toolbar including universal search.
         slots={{ toolbar: GridToolbar }}
