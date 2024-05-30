@@ -25,6 +25,12 @@ yarn add @mui/x-charts
 
 [Data Grid Demo](https://mui.com/x/react-data-grid/demo/)
 
+### Row
+
+Rows are key-value pair objects, mapping column names as keys with their values. You should also provide an id property on each row to allow delta updates and better performance.
+
+[Why does React needs keys](https://react.dev/learn/rendering-lists#why-does-react-need-keys)
+
 ### Column
 
 [Column Definition](https://mui.com/x/react-data-grid/column-definition/)
@@ -37,12 +43,6 @@ Columns are objects defined with a set of attributes of the GridColDef interface
 - sortable(true | false): Use sortable attribute to define whether data field is sortable on click.
 - editable(true | false): Use editable attribute to define whether data field is editable on click. [Editing](https://mui.com/x/react-data-grid/editing/)
 - renderCell: User renderCell attribute for rendering React component within cells. Same as Ant Design render attribute. If the React component consists of multiply lines, please do create a seperate function. Example: renderProgress.
-
-### Row
-
-Rows are key-value pair objects, mapping column names as keys with their values. You should also provide an id property on each row to allow delta updates and better performance.
-
-[Why does React needs keys](https://react.dev/learn/rendering-lists#why-does-react-need-keys)
 
 ### DataGrid
 
