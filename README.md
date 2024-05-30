@@ -39,7 +39,7 @@ Columns are objects defined with a set of attributes of the GridColDef interface
 
 - field: Are mapped to key of the row object.
 - headerName: Column title.
-- type: Boolean type is rendered in √ | × format. Action type allows you to insert any icons (e.g. Edit button).
+- type: Boolean type is rendered in ☑️ | ✖️ format. Action type allows you to insert any icons (e.g. ✍️Edit button).
 - sortable(true | false): Use sortable attribute to define whether data field is sortable on click.
 - editable(true | false): Use editable attribute to define whether data field is editable on click. [Editing](https://mui.com/x/react-data-grid/editing/)
 - renderCell: User renderCell attribute for rendering React component within cells. Same as Ant Design render attribute. If the React component consists of multiply lines, please do create a seperate function. Example: renderProgress.
@@ -56,6 +56,13 @@ Columns are objects defined with a set of attributes of the GridColDef interface
 - slots: Quick filter allows filtering rows by multiple columns with a single text input. [Quick filter](https://mui.com/x/react-data-grid/filtering/quick-filter/), Easily export the rows in various file formats such as CSV, Excel, or PDF. [Export](https://mui.com/x/react-data-grid/export/)
 - pageSizeOptions: [Pagination](https://mui.com/x/react-data-grid/pagination/)
 - checkboxSelection: [Row Selection](https://mui.com/x/react-data-grid/row-selection/)
+
+### Styling
+
+- sx: Use sx attribute to style MUI components! Do not use tailwind CSS to directly style your component.
+
+Tips: Use Chrome inspect tool to find the class nested inside of MUI component.
+
 
 ## Charts
 
