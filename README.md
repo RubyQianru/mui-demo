@@ -53,7 +53,7 @@ Rows are key-value pair objects, mapping column names as keys with their values.
 ```
 
 - autoHeight: The autoHeight prop enables the Data Grid to adjust its size based on its content. This means that the Data Grid's height will be determined by the number of rows, ensuring that all rows will be visible to the user simultaneously. [Layout](https://mui.com/x/react-data-grid/layout/)
-- slots: [Quick filter](https://mui.com/x/react-data-grid/filtering/quick-filter/), [Export](https://mui.com/x/react-data-grid/export/)
+- slots: Quick filter allows filtering rows by multiple columns with a single text input. [Quick filter](https://mui.com/x/react-data-grid/filtering/quick-filter/), Easily export the rows in various file formats such as CSV, Excel, or PDF. [Export](https://mui.com/x/react-data-grid/export/)
 - pageSizeOptions: [Pagination](https://mui.com/x/react-data-grid/pagination/)
 - checkboxSelection: [Row Selection](https://mui.com/x/react-data-grid/row-selection/)
 
